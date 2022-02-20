@@ -1,0 +1,10 @@
+project Basico is
+
+   package Compiler is
+      for Switches ("Ada") use ("-g", "-O2");
+   end Compiler;
+
+   for Main use ("hola_mundo.adb", "suma_pares.adb");
+
+end Basico;
+

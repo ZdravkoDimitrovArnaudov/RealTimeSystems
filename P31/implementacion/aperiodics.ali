@@ -1,0 +1,216 @@
+V "GNAT Lib v2016"
+A --RTS=marteuc_linux_lib
+A -m32
+A -march=i686
+P ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_HEAP_ALLOCATIONS
+RV NO_IMPLICIT_PROTECTED_OBJECT_ALLOCATIONS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_TASKS=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U aperiodics%b		aperiodics.adb		8e75adc6 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W event_monitor%s	event_monitor.adb	event_monitor.ali  AD
+W interfaces%s		interfac.ads		interfac.ali
+W priority_queue%s	priority_queue.adb	priority_queue.ali  AD
+W system%s		system.ads		system.ali
+W system.arith_64%s	s-arit64.adb		s-arit64.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W task_params%s		task_params.adb		task_params.ali
+
+U aperiodics%s		aperiodics.ads		beec5329 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20181008100342 3ffc8e18 ada%s
+D a-except.ads		20181008100342 291912d5 ada.exceptions%s
+D a-finali.ads		20181008100342 bf4f806b ada.finalization%s
+D a-numeri.ads		20181008100342 bb51c45a ada.numerics%s
+D a-nuflra.ads		20181008100342 4056ab7a ada.numerics.float_random%s
+D a-reatim.ads		20181008100342 a87e2da7 ada.real_time%s
+D a-retide.ads		20181008100342 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20181008100342 119b8fb3 ada.streams%s
+D a-tags.ads		20181008100341 01f5e3ef ada.tags%s
+D a-unccon.ads		20181008100342 f9eb8f06 ada.unchecked_conversion%s
+D aperiodics.ads	20210520084244 d065eacb aperiodics%s
+D aperiodics.adb	20200502163230 3b3ee2c8 aperiodics%b
+D event_monitor.ads	20190426082656 eb86d84d event_monitor%s
+D interfac.ads		20181008100342 5ab55268 interfaces%s
+D i-c.ads		20181008100342 5421119b interfaces.c%s
+D priority_queue.ads	20190322181650 4ba1ddee priority_queue%s
+D priority_queue.adb	20190322181650 59815a88 priority_queue%b
+D system.ads		20181008100342 c6f79445 system%s
+D s-atacco.ads		20181008100342 4c36d12f system.address_to_access_conversions%s
+D s-arit64.ads		20181008100342 404da5f2 system.arith_64%s
+D s-exctab.ads		20181008100342 54135002 system.exception_table%s
+D s-fatflt.ads		20181008100342 11beb392 system.fat_flt%s
+D s-fatgen.ads		20181008100342 49cbaf86 system.fat_gen%s
+D s-finroo.ads		20181008100342 4ff27390 system.finalization_root%s
+D s-linux.ads		20181008100342 2fda6ad1 system.linux%s
+D s-memory.ads		20181008100342 597d6634 system.memory%s
+D s-multip.ads		20181008100342 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20181008100342 6236e5eb system.os_constants%s
+D s-osinte.ads		20181008100342 257483d0 system.os_interface%s
+D s-parame.ads		20181008100342 7e2a0d7f system.parameters%s
+D s-rannum.ads		20181008100342 99ade2f2 system.random_numbers%s
+D s-soflin.ads		20181008100342 14e1eb6c system.soft_links%s
+D s-stache.ads		20181008100342 a37c21ec system.stack_checking%s
+D s-stausa.ads		20181008100341 017a0a05 system.stack_usage%s
+D s-stalib.ads		20181008100342 09bd3940 system.standard_library%s
+D s-stalib.adb		20181008100342 f2fe2716 system.standard_library%b
+D s-stoele.ads		20181008100342 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20181008100342 2b3f8252 system.task_info%s
+D s-taspri.ads		20181008100342 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20181008100342 1ea86599 system.task_primitives.operations%s
+D s-taskin.ads		20181008100342 56333711 system.tasking%s
+D s-taprob.ads		20181008100342 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20181008100342 b641f948 system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20181008100342 5f548bb3 system.tasking.protected_objects.operations%s
+D s-tassta.ads		20181008100342 70812003 system.tasking.stages%s
+D s-traent.ads		20181008100342 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20181008100342 34867c83 system.unsigned_types%s
+D task_params.ads	20190322181650 855f0b1c task_params%s
+X 1 ada.ads
+16K9*Ada 19e8 11|2r6 2r25 12|5r6 5r37
+X 4 a-numeri.ads
+16K13*Numerics 32e17 12|5r10 5r41
+X 5 a-nuflra.ads
+41K22*Float_Random 74e30 12|5w19 10r31 57r36 59r43 81r46 162r4
+47R9*Generator<31|63R9> 12|10r44
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<31|71p13> 12|57s49 59s56 81s59
+53U14*Reset<31|100p14> 12|162s17
+53r21 Gen{47R9} 12|162r24
+X 6 a-reatim.ads
+39K13*Real_Time 187e18 11|2w10 2r29
+51O9*Time<duration> 11|21r51 12|12r31 33r51 138r25
+56O9*Time_Span<duration>
+67V14*"+"{51O9} 12|38s42 151s42
+114V13*To_Time_Span{56O9} 12|38s44 151s44
+X 11 aperiodics.ads
+9K9*Aperiodics 29l5 29e15 12|7b14 146r10 164l5 164t15
+12o4*Min_Interarrival_Time{duration} 12|49r40
+13o4*Max_Interarrival_Time{duration} 12|50r40
+15o4*Bound_Interval{duration} 12|57r66 77r39
+16i4*Max_Arrivals{positive} 12|81r82
+18w14*Event_Generator 12|27b19 41l8 41t23 155r13
+20U17 New_Event 12|28b17 31l11 31t20 155s29
+21Y13 Wait_For_Event 21<29 12|33b13 40l11 40t25
+21o29 Activation_Time{6|51O9} 12|38m10
+23i7 Index{natural} 12|30r10 30r19 33r63 39r10 39r19
+26t9*Aperiodic_Generator 12|136b14 158l8 158t27
+X 12 aperiodics.adb
+10r4 Gen{5|47R9} 57r57 59r64 81r67 162r31
+12o4 Initial_Time{6|51O9} 38r29 142m32 144r26 151r29
+13i4 Aperiodic_Id{48|4I12} 143m7 148r33
+14i4 Iteration{natural} 77r26 78m13
+15e4 Event{48|6E9} 55r13 72r13 120m19
+18o4 Aperiodic_Activation{duration} 76m13 76r37 86r47 90m13 90r38 93r44 97r26
+20K12 Activation_Queue[16|34] 37r10 85r16 92r13
+33o29 Activation_Time{6|51O9}
+34o10 The_Activation{duration} 37m55 38r58
+35i10 Activation_Number{positive} 37m36
+47V13 Next_Event{duration} 47b13 64l8 64t18 77s57 90s61
+49o7 Min{duration} 59r26 59r79
+50o7 Max{duration} 59r73
+51o7 The_Event{duration} 57m13 59m13 63r14
+70U14 Get_Next_Event 70b14 70<30 70<62 99l8 99t22 146s21
+70o30 Activation_Time{duration} 97m7
+70i62 Number_Of_Activations{positive} 80m13 84r31 91m13 92r44
+84i17 Index{integer} 85r47
+105V13 Get_Aperiodic_Id{48|4I12} 105b13 130l8 130t24 143s23
+106i7 Id{48|4I12} 119m19 126r17
+107b7 Found{boolean} 116r19 121m19 125r10
+108e7 Activation{48|6E9} 111m10 112r15 120r28
+110i11 T<short_short_integer> 111r52 119r25
+138o7 Next_Activation{6|51O9} 144m7 151m10 152r22
+139o7 The_Activation{duration} 146m37 148r47 151r58
+140i7 Activations{natural} 146m53 147r28 154r28
+147i14 Index{integer}
+154i14 Index{integer}
+X 13 event_monitor.ads
+5K9*Event_Monitor 12|3w6 3r25 13|83e18
+35w14*Monitor 12|142r7 148r13
+53U17 Send_Event 12|148s21
+60Y13 Start_Completed 12|142s15
+X 14 interfac.ads
+55I9*Integer_64<long_long_integer>
+X 16 priority_queue.ads
+28i4 Size{positive} 12|21r7
+29+9 Element 12|22r7
+30+9 Priority 12|23r7
+31V19 ">"{boolean} 12|24r8
+32V19 "="{boolean} 12|25r8
+34k9*Priority_Queue 12|2w6 20r36 16|68e19
+51U14*Enqueue 12|85s33[20] 92s30[20]
+51i23 E{integer} 12|85r42[20] 92r39[20]
+51o39 P{duration} 12|86r42[20] 93r39[20]
+56U14*Dequeue 12|37s27[20]
+X 18 system.ads
+37K9*System 11|3w6 19r24 18|160e11
+67M9*Address
+109i4*Max_Priority{positive} 11|19r31
+X 20 s-arit64.ads
+44I12*Int64{14|55I9}
+54V13*Multiply_With_Ovflo_Check{44I12} 55i<c,__gnat_mulv64>22
+X 26 s-memory.ads
+53V13*Alloc{18|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{18|67M9} 105i<c,__gnat_realloc>22
+X 34 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 36 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 48 task_params.ads
+1K9*Task_Params 12|1w6 1r23 110r16 110r52 111r24 48|29e16
+3I9*Task_Count<short_short_integer>
+4I12*User_Task_Id{3I9} 12|13r31 105r37 106r20 110r28
+6E9*Activation_Kinds 12|15r31 108r20 48|6e57
+6n30*Periodic{6E9} 12|60r15 94r15 113r18
+6n40*Sporadic{6E9} 12|58r15 89r15 115r27
+6n50*Bursty{6E9} 12|56r15 73r15 115r18
+10e7*Activation{6E9} 12|111r55
+17V13*Get_Parameters{8R9} 12|111s36
+23V13*Number_Of_Tasks{3I9} 12|110s64
+

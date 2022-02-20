@@ -1,0 +1,11 @@
+project Default is
+
+   package Compiler is
+      for Switches ("Ada") use ("-g", "-O2");
+   end Compiler;
+
+   for Main use ("event_monitor.adb", "event_monitor.ads", "execution_load.adb", "execution_load.ads", "pantalla_ansi.adb", "pantalla_ansi.ads", "practica1b.adb", "priority_queue.adb", "priority_queue.ads", "queues.adb", "queues.ads", 
+      "reporter.adb", "reporter.ads", "task_params.adb", "task_params.ads");
+
+end Default;
+

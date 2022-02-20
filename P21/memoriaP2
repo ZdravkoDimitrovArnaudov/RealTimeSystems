@@ -1,0 +1,56 @@
+#Memoria Practica 2
+
+>>Práctica 2-A
+
+Obtener los tiempos de peor caso del sistema con MAST. La política de sincronización de los objetos protegidos será herencia inmediata IPC.
+
+Pasos:
+	-asignar manualmente las prioridades de las tareas
+	-configurar los techos de prioridad de los objetos protegidos.
+	-realizar el modelado y el analisis del sistema.
+
+Abrimos la herramienta MAST.Creamos las tareas con sus respectivos tiempos y configuración. Mas tarde, en la sección de uso de mutex, creamos 4 operaciones, que serán cada uno de los accesos por las tareas a los recursos compartidos con su tiempo asociado. Para que funcione, es necesario crear también dos mutexes que serán en este caso 2, 1 por recurso. Por último, asignamos a dichos mutex el techo de prioridad de la tarea con más prioridad que los usa. En nuestro caso, es la prioridad de la tarea 2.
+
+Finalmente, comprobamos si el sistema es planificable o no. Como podemos observar, el conjunto de tareas es planificable y todas cuentan con un slack considerable.
+
+
+
+>>PRACTICA 1-B
+
+Antes que nada, abrimos el gps de Marte. 
+Es importante especificar el tiempo que pasa una tarea dentro de los objetos protegidos. Una forma sencilla es modificar el tipo de dato Task_Parameters para añadir los tiempos de ejecución de las dos secciones críticas. Si hay una tarea que accede solo a una, tendrá un tiempo de ejecución de 0.0 en la otra.
+
+Una vez modificado el tipo de dato para añadirle los tiempos correspondientes y configurado el sistema con sus tiempos adecuados, comenzamos a crear los objetos protegidos.
+	-hay que configurar los techos de prioridad de los dos objetos protegidos.
+	-cada objeto tendrá una operación protegida en la que se indicará el tiempo a consumir. Por ejemplo: procedure Seccion_Critica (For_Seconds: in Duration);
+
+
+Una vez terminado, hay que modificar el código de las tareas periodicas para que utilicen recursos compartidos:
+	1. gasta la mitad de su tiempo de ejecución neto (fuera del objeto protegido)
+	2. realiza las llamadas a los recursos compartidos, si las hubiera
+	3. Gasta la parte restante de su tiempo de ejecución neto.
+
+
+Seguidamente, analizaremos 3 casos posibles:
+	Caso 1: ejecutamos cuando no se asigna protocolo de sincronización ni prioridad de los recurso compartidos. Capturamos con pantalla el comportamiento y lo analizamos: Solo hemos quitado el locking no el queue. En la segunda foto lo quitamos tambien y vemos que pasa. Hay que borrar todos los pragmas excepto el primero de policy.
+
+	-caso 2: les devolvemos las prioridades a las tareas y los protocolos de sincronizacion adecuados. 
+
+	-cASO 3: La prioridad de los objetos es la maxima de las tareas que hay aunque compartan tareas o no. Es decir, lo elevevamos a 5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

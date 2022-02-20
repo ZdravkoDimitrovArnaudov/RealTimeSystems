@@ -1,0 +1,89 @@
+V "GNAT Lib v2016"
+A --RTS=marteuc_linux_lib
+A -m32
+A -march=i686
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U pantalla_ansi%b	pantalla_ansi.adb	d4109a47 NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W text_io%s		text_io.ads		text_io.ali
+
+U pantalla_ansi%s	pantalla_ansi.ads	d765b338 EE NE OO PK
+
+D ada.ads		20181008100342 3ffc8e18 ada%s
+D a-except.ads		20181008100342 291912d5 ada.exceptions%s
+D a-ioexce.ads		20181008100342 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20181008100342 119b8fb3 ada.streams%s
+D a-tags.ads		20181008100341 01f5e3ef ada.tags%s
+D a-textio.ads		20181008100341 386df5d4 ada.text_io%s
+D a-unccon.ads		20181008100342 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20181008100342 5ab55268 interfaces%s
+D i-cstrea.ads		20181008100342 e53d8b8e interfaces.c_streams%s
+D pantalla_ansi.ads	20190322181650 d765b338 pantalla_ansi%s
+D pantalla_ansi.adb	20190322181650 46a30fb6 pantalla_ansi%b
+D system.ads		20181008100342 c6f79445 system%s
+D s-conca2.ads		20181008100342 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20181008100342 0b705ca5 system.concat_3%s
+D s-crtl.ads		20181008100342 0ebbdb71 system.crtl%s
+D s-exctab.ads		20181008100342 54135002 system.exception_table%s
+D s-ficobl.ads		20181008100342 078245e4 system.file_control_block%s
+D s-imgint.ads		20181008100342 02dbe0c2 system.img_int%s
+D s-parame.ads		20181008100342 7e2a0d7f system.parameters%s
+D s-secsta.ads		20181008100342 86a2856d system.secondary_stack%s
+D s-soflin.ads		20181008100342 14e1eb6c system.soft_links%s
+D s-stache.ads		20181008100342 a37c21ec system.stack_checking%s
+D s-stalib.ads		20181008100342 09bd3940 system.standard_library%s
+D s-stoele.ads		20181008100342 2dc34a04 system.storage_elements%s
+D s-traent.ads		20181008100342 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20181008100342 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20181008100342 1b7d22d2 system.wch_con%s
+D text_io.ads		20181008100342 45d626c9 text_io%s
+X 6 a-textio.ads
+242U14*Put 11|13s7 18s7 19s7 24s7 29s7 34s7 39s9 44s11 49s13 54s15 59s21
+. 64s21 69s21 74s21 79s21 84s21
+X 10 pantalla_ansi.ads
+1K9*Pantalla_ANSI 39l5 39e18 11|3b14 87l5 87t18
+3I12*Filas{integer} 9r20 20r39 22r39 11|32r39 37r47
+5I12*Columnas{integer} 10r20 24r45 26r43 11|42r55 47r55
+7R9*Posicion 11e17 15r35 11|16r35
+9i10*Fila{3I12} 11|18r41
+10i10*Columna{5I12} 11|19r23
+13U14*Borra_Pantalla 11|11b14 14l8 14t22
+15U14*Mueve_Cursor 15>28 11|16b14 20l8 20t20
+15r28 A{7R9} 11|16b28 18r39 19r21
+17U14*Guarda_Posicion_Cursor 11|22b14 25l8 25t30
+18U14*Recupera_Posicion_Cursor 11|27b14 30l8 30t32
+20U14*Sube_Cursor 20>27 11|32b14 35l16 35t27
+20i27 Lineas{3I12} 11|32b27 34r39
+22U14*Baja_Cursor 22>27 11|37b22 40l18 40t29
+22i27 Lineas{3I12} 11|37b35 39r41
+24U14*Adelanta_Cursor 24>31 11|42b24 45l20 45t35
+24i31 Espacios{5I12} 11|42b41 44r43
+26U14*Atrasa_Cursor 26>29 11|47b26 50l22 50t35
+26i29 Espacios{5I12} 11|47b41 49r45
+28U14*Borra_Linea 11|52b28 55l22 55t33
+30U14*Video_Inverso 11|57b28 60l22 60t35
+31U14*Video_Normal 11|62b28 65l22 65t34
+33U14*Activa_Parpadeo 11|67b28 70l22 70t37
+34U14*Desactiva_Parpadeo 11|72b28 75l22 75t40
+36U14*Activa_Negrilla 11|77b28 80l22 80t37
+37U14*Desactiva_Negrilla 11|82b28 85l22 85t40
+X 11 pantalla_ansi.adb
+5V13 A_String{string} 5b13 5>23 9l8 9t16 18s30 19s12 34s30 39s32 44s34 49s36
+5i23 Int{integer} 6r46
+6a7 Str{string} 8r14 8r21
+X 28 text_io.ads
+24K9*Text_IO=24:29 11|1w6 1r19
+

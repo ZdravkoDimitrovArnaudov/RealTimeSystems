@@ -1,0 +1,14 @@
+#Memoria parte 2 practica 2.
+
+>>PRACTICA 1-D
+
+Tenemos que implementar las situaciones de peor caso para las tareas 2 y 5.
+	-Caso t2: el objetivo es que las tareas de menor prioridad tomen los recursos antes que t2. El peor caso aquí será cuando la tarea que tome el recurso compartido más tiempo lo tome primero. En este caso, se correspondería con la tarea 5. Tendríamos que Ajustar los tiempos para que la t2 se active despues de que t5 haya tomado el recurso.
+
+	-Caso t5: en esta situacion. Si el resto de tareas comienzan antes que la última, ya se establecería peor caso, puesto que no puede ser expulsada y ejecutaría lo más tarde posible.
+
+
+>>PRACTICA 1-E
+El tiempo de peor caso de la tarea 2 asciende en el análisis con mast a 3.4 y no 3.0 porque en herencia basica pueden producirse bloqueos encadenados, en techo de prioridad solo 1 vez. Esa es la diferencia.
+
+Como vemos, usando herencia basica en la implementacion, los tiempos son aproximados pero no del todo iguales al análisis con mast. Ahora, tenemos que ajustar las fases para que se produzca bloqueo encadenado y el tiempo de respuesta de peor caso de T2 suba a 3,4 aproximadamente.

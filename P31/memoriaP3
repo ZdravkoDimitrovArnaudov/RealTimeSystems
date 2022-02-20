@@ -1,0 +1,51 @@
+#MEMORIA P3 SESION 1#
+
+>>CASO 0
+
+Lo que debemos hacer es implementar un programa con el sistema formado por las 3 tareas periódicas, asignando prioridades según deadline monotonic y observar el comportamiento del sistema inicial.
+Tomamos captura de pantalla para ver el comportamiento.
+
+>>CASO 1
+
+Introducir un servidor de procesado directo para procesar los eventos aperiódico de tipo esporádico. 
+
+-En task_params, hay que asignar un valor cualquiera al periodo de la tarea esporádica. Asignar un valor alto al deadline de la tarea esporádica para que el sistema de monotorización no muestre si se pierden plazos.
+
+
+
+-Configurar los eventos aperiodicos de tipo esporadico en el fichero aperiodics.ads.
+
+-implementar el servidor de procesador directo en el fichero aperiodics_servers.adb.
+
+Realizamos la debida implementacion. Tomamos capturas de las ejecuciones. Podemos comprobar como la tarea 2 que es aperiodica se activa en intervalos no determinados.
+
+>>CASO 2
+
+Implementar el caso de servidor polling en aperiodic_servers.
+Utilizar los periodos de polling de 0.001s, 5, 6 y 10s.
+Explicar las diferenicas existentes en el sistema al utilizar cada configuración e indica si las configuraciones propuestas estas sobredimensionadas o si acumulan eventos.
+
+Relacionar tambien los resultados con los apartados anteriores.
+
+>>CASO 3
+
+Tenemos que incluir la implementación del servidor esporádico para procesar el evento aperiódico y observar los tiempos de respuesta para las distintas configuraciones propuestas de capacidad y el periodo de relleno.
+
+Las diferencias entre el servidor esporádico que vamos a utilizar frente al teórico, es que es emulado. (INVESTIGAR QUE ES). Para cada uno de los casos, tenemos que anotar las medidas con capturas.
+
+	-opción 1 = [Cr=1, Tr=3]:
+	-opción 2 = [Cr=1, Tr=5]:
+	-opción 3 = [Cr=1, Tr=6]:
+	-opción 4 = [Cr=2, Tr=10]:
+
+
+
+
+>>CASO 4: BURSTY ARRIVAL
+
+Pienso que el mejor server en este caso sería el esporádico, porque combina la predictibilidad del método de polling (ya que en un intervalo de ventana de 10s pueden llegar 4 tareas en cualquier instante) y la respuesta corta o breve del método directo de ejecución. Teniendo en cuenta los parámetros de ventana y del número del tamaño de la ráfaga, debemos pensar como configurar el servidor en este caso. También, ademas de seleccionar el servidor esporádico y su configuraciónnb, no se nos debe olvidar que la activación debe ser de tipo bursty.
+
+Probamso con T=10 y C=4. Con esta configuración, se pierden plazos con lo cual tenemos que cambiar la configuracion. Ponemos una capacidad de 2 y vemos que asi no se pierde ningun plazo. Tenemos video de ello.
+
+Importante recordar que para la memoria es necesario tener el codigo de implementación con y sin ráfagas.
+

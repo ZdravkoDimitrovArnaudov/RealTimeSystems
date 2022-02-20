@@ -1,0 +1,150 @@
+V "GNAT Lib v2016"
+M P W=b
+A --RTS=marteuc_linux_lib
+A -m32
+A -march=i686
+P LI QP TF  ZX
+
+RN
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV STATIC_PRIORITIES
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U practica1b%b		practica1b.adb		90610c2c NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W event_monitor%s	event_monitor.adb	event_monitor.ali
+W execution_load%s	execution_load.adb	execution_load.ali
+W reporter%s		reporter.adb		reporter.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W task_params%s		task_params.adb		task_params.ali
+
+D ada.ads		20181008100342 3ffc8e18 ada%s
+D a-except.ads		20181008100342 291912d5 ada.exceptions%s
+D a-finali.ads		20181008100342 bf4f806b ada.finalization%s
+D a-ioexce.ads		20181008100342 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20181008100342 a87e2da7 ada.real_time%s
+D a-retide.ads		20181008100342 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20181008100342 119b8fb3 ada.streams%s
+D a-tags.ads		20181008100341 01f5e3ef ada.tags%s
+D a-textio.ads		20181008100341 386df5d4 ada.text_io%s
+D a-unccon.ads		20181008100342 f9eb8f06 ada.unchecked_conversion%s
+D event_monitor.ads	20190426082656 eb86d84d event_monitor%s
+D execution_load.ads	20190322171150 2b6ae91c execution_load%s
+D interfac.ads		20181008100342 5ab55268 interfaces%s
+D i-c.ads		20181008100342 5421119b interfaces.c%s
+D i-cstrea.ads		20181008100342 e53d8b8e interfaces.c_streams%s
+D practica1b.adb	20210506090738 60445236 practica1b%b
+D reporter.ads		20190322181650 b8806f38 reporter%s
+D system.ads		20181008100342 c6f79445 system%s
+D s-atacco.ads		20181008100342 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20181008100342 0ebbdb71 system.crtl%s
+D s-exctab.ads		20181008100342 54135002 system.exception_table%s
+D s-ficobl.ads		20181008100342 078245e4 system.file_control_block%s
+D s-finroo.ads		20181008100342 4ff27390 system.finalization_root%s
+D s-linux.ads		20181008100342 2fda6ad1 system.linux%s
+D s-multip.ads		20181008100342 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20181008100342 6236e5eb system.os_constants%s
+D s-osinte.ads		20181008100342 257483d0 system.os_interface%s
+D s-parame.ads		20181008100342 7e2a0d7f system.parameters%s
+D s-soflin.ads		20181008100342 14e1eb6c system.soft_links%s
+D s-stache.ads		20181008100342 a37c21ec system.stack_checking%s
+D s-stausa.ads		20181008100341 017a0a05 system.stack_usage%s
+D s-stalib.ads		20181008100342 09bd3940 system.standard_library%s
+D s-stoele.ads		20181008100342 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20181008100342 2b3f8252 system.task_info%s
+D s-taspri.ads		20181008100342 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20181008100342 1ea86599 system.task_primitives.operations%s
+D s-taskin.ads		20181008100342 56333711 system.tasking%s
+D s-taprob.ads		20181008100342 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20181008100342 b641f948 system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20181008100342 5f548bb3 system.tasking.protected_objects.operations%s
+D s-tassta.ads		20181008100342 70812003 system.tasking.stages%s
+D s-traent.ads		20181008100342 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20181008100342 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20181008100342 1b7d22d2 system.wch_con%s
+D task_params.ads	20210506075823 dead4c45 task_params%s
+X 1 ada.ads
+16K9*Ada 19e8 16|5r6 5r52 78r24 109r29 109r65
+X 5 a-reatim.ads
+39K13*Real_Time 187e18 16|5w56 78r28 109r33 109r69
+51O9*Time<duration> 16|78r38
+56O9*Time_Span<duration>
+67V14*"+"{51O9} 16|109s44
+85V14*"+"{56O9} 16|109r44
+114V13*To_Time_Span{56O9} 16|109s79
+X 9 a-textio.ads
+49K13*Text_IO 471e16 16|5w10
+X 11 event_monitor.ads
+5K9*Event_Monitor 83e18 16|5w27 83r7 87r10 106r10
+35w14*Monitor 16|83r21 87r24 106r24
+42Y13 Register 16|83s29
+46U17 Start_Job 16|87s32
+49U17 End_Of_Job 16|106s32
+X 12 execution_load.ads
+4K9*Execution_Load 12e19 16|5w80 32r9 60r9 90r10 102r10
+10U14*Eat 16|32s24 60s24 90s25 102s25
+X 16 practica1b.adb
+7U11*Practica1b 7b11 125l5 125t15
+13w14 Recurso_1 27b19 35l8 35t17 94r13
+18U17 Seccion_Critica 18>34 29b17 34l11 34t26 94s23
+18o34 T_seg{duration} 29b34 32r29
+42w14 Recurso_2 55b19 63l8 63t17 98r13
+47U17 Seccion_Critica 47>34 57b17 62l11 62t26 98s23
+47o34 T_seg{duration} 57b34 60r29
+68T14 Periodica 68d25 69d25 71l8 71e17 73b14 113l8 113t17 116r9 117r9 118r9
+. 119r9 120r9
+68i25 Id{45|4I12} 76r75 83r39 87r42 106r43
+69i25 Prioridad{18|113I12} 70r23
+76r7 Params{45|8R9} 77r38 79r36 80r27 93r13 94r39 97r13 98r39
+77o7 Periodo{duration} 109r93
+78o7 Next_Activation{5|51O9} 83m43 86r22 109m10 109r47
+79o7 Ejecucion_neta{duration} 90r30 102r30
+80o7 Phase{duration} 83r60
+116t4 T1{68T14}
+117t4 T2{68T14}
+118t4 T3{68T14}
+119t4 T4{68T14}
+120t4 T5{68T14}
+X 17 reporter.ads
+1K9*Reporter 16|5w42 17|7e13
+X 18 system.ads
+37K9*System 16|5w19 69r36 18|160e11
+112I12*Any_Priority{integer}
+113I12*Priority{112I12} 16|69r43
+X 31 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 45 task_params.ads
+1K9*Task_Params 16|5w67 68r30 76r16 76r47 45|29e16
+3I9*Task_Count<short_short_integer>
+4I12*User_Task_Id{3I9} 16|68r42
+8R9*Task_Parameters 16|76r28 45|11e14
+9o7*Period{duration} 16|77r45
+9o15*Exec_Time{duration} 16|79r43
+9o36*TRecurso_1{duration} 16|93r20 94m46
+9o48*TRecurso_2{duration} 16|97r20 98m46
+9o71*Phase{duration} 16|80r34
+17V13*Get_Parameters{8R9} 16|76s59
+

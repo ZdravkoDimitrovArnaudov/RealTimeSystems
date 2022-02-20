@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/basico.gpr</vfs_file>
+    <file_marker column=" 16" line=" 7" >
+      <vfs_project />
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/hola_mundo.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 4" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/basico.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/suma_pares.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 4" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/basico.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/suma_pares.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 15" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/basico.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/suma_pares.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 12" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/basico.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/suma_pares.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/basico.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica1/suma_pares.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

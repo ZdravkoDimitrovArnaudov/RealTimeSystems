@@ -1,0 +1,56 @@
+V "GNAT Lib v2016"
+A --RTS=marteuc_linux_lib
+A -m32
+A -march=i686
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U task_params%b		task_params.adb		25e8ed24 NE OO PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+
+U task_params%s		task_params.ads		dead4c45 EE OO PK
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20181008100342 3ffc8e18 ada%s
+D a-except.ads		20181008100342 291912d5 ada.exceptions%s
+D a-unccon.ads		20181008100342 f9eb8f06 ada.unchecked_conversion%s
+D system.ads		20181008100342 c6f79445 system%s
+D s-exctab.ads		20181008100342 54135002 system.exception_table%s
+D s-parame.ads		20181008100342 7e2a0d7f system.parameters%s
+D s-stalib.ads		20181008100342 09bd3940 system.standard_library%s
+D s-traent.ads		20181008100342 005bf670 system.traceback_entries%s
+D task_params.ads	20210506075823 dead4c45 task_params%s
+D task_params.adb	20210506092901 fb45a161 task_params%b
+X 9 task_params.ads
+1K9*Task_Params 29l5 29e16 10|1b14 76l5 76t16
+3I9*Task_Count<short_short_integer> 4r28 4r48 23r36 10|4r28 71r36
+4I12*User_Task_Id{3I9} 17r39 10|7r28 7r47 58r39
+6E9*Activation_Kinds 6e57 10r37
+6n30*Periodic{6E9} 10|15r30 23r30 32r30 42r30 52r30
+6n40*Sporadic{6E9}
+6n50*Bursty{6E9}
+8R9*Task_Parameters 11e14 17r60 10|7r86 58r60
+9o7*Period{duration} 10|9m10 17m10 26m10 36m10 46m10
+9o15*Exec_Time{duration} 10|10m10 18m10 27m10 37m10 47m10
+9o26*Deadline{duration} 10|11m10 19m10 28m10 38m10 48m10
+9o36*TRecurso_1{duration} 10|12m10 20m10 29m10 39m10 49m10
+9o48*TRecurso_2{duration} 10|13m10 21m10 30m10 40m10 50m10
+9o71*Phase{duration} 10|14m10 22m10 31m10 41m10 51m10
+10e7*Activation{6E9} 10|15m10 23m10 32m10 42m10 52m10
+17V13*Get_Parameters{8R9} 17>29 10|58b13 65l8 65t22
+17i29 Of_Task{4I12} 10|58b29 60r10 64r20
+23V13*Number_Of_Tasks{3I9} 10|71b13 74t7
+25X4*Wrong_Task_Id 10|61r16
+27N4*Default_Value
+X 10 task_params.adb
+4i4 Num_Of_Tasks{9|3I9} 7r69 60r20 73r14
+7a4 Param(9|8R9) 64r14
+

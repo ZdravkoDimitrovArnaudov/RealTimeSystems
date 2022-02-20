@@ -1,0 +1,31 @@
+V "GNAT Lib v2016"
+A -gnatA
+A -gnatc
+A -mtune=generic
+A -march=x86-64
+P NO ZX
+
+RN
+RV NO_FIXED_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U parametros_tarea%s	parametros_tarea.ads	14804d12 EE OO PK IL
+
+D parametros_tarea.ads	20210318102655 14804d12 parametros_tarea%s
+X 1 parametros_tarea.ads
+1K9*parametros_tarea 23E9 30l5 30e21
+3R9*Datos_Tarea 10r44 12r41 14r42 17r41 23c9 27e14
+4I9*Prioridad_Ejec<integer> 12r61 25r18
+5O12*Plazo_Ejec{duration} 24r14
+10V13*Get_Tarea{3R9} 10>24
+10i24 Id{integer}
+12V13*Get_Priority_Tarea{4I9} 12>33
+12r33 Tarea{3R9}
+14V13*Return_Info_Tarea{string} 14>32
+14r32 Tarea{3R9}
+17A9*Lista_Tareas(3R9)<integer>
+24o7*Plazo{5O12}
+25i7*Prioridad{4I9}
+

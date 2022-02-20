@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__concurrente.o
+[PROJECT FILES]
+/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/default.gpr
+20210325094603
+[BOUND OBJECT FILES]
+/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/sopa.o
+/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/concurrente.o
+[GENERATED SOURCE FILES]
+b__concurrente.ads
+b__concurrente.adb
+b__concurrente.ali
+[RESULTING OPTIONS]
+-L/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/
+-L/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/
+-L/usr/local/gnat-2016/lib/gcc/x86_64-pc-linux-gnu/4.9.4/adalib/
+-static
+-static-libgcc
+/usr/local/gnat-2016/lib/gcc/x86_64-pc-linux-gnu/4.9.4/adalib/libgnarl.a
+/usr/local/gnat-2016/lib/gcc/x86_64-pc-linux-gnu/4.9.4/adalib/libgnat.a
+-ldl
+-lpthread
+-lrt

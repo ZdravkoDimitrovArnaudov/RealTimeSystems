@@ -1,0 +1,47 @@
+V "GNAT Lib v2016"
+A --RTS=marteuc_linux_lib
+A -m32
+A -march=i686
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV SPARK_05
+
+U queues%b		queues.adb		4dcd6f10 NE OO PK GE
+
+U queues%s		queues.ads		b027abd6 BN EE NE OO PK GE
+
+D queues.ads		20190322181650 b027abd6 queues%s
+D queues.adb		20190322181650 fdeac4c6 queues%b
+D system.ads		20181008100342 c6f79445 system%s
+X 1 queues.ads
+21i4 Queue_Size{positive} 41r38 48r26 2|19r31
+22+9 Element 33r45 35r46 37r46 43r42 2|36r40 48r43 60r42
+24k9*Queues 21z4 22z9 41E12 51l5 51e11 2|14b14 71l5 71t11
+26R9*Queue 30r35 31r35 34r49 36r49 38r45 45c9 49e14 2|22r35 29r34 37r44 49r46
+. 61r46
+28X4*Empty_Queue 2|53r16 65r16
+28X17*Full_Queue 2|41r16
+30V13*Empty{boolean} 30>20 2|22b13 26l8 26t13 52s10 64s10
+30r20 The_Queue{26R9} 2|22b20 25r24 25r40
+31V13*Full{boolean} 31>20 2|29b13 33l8 33t12 40s10
+31r20 The_Queue{26R9} 2|29b19 32r34 32r51
+33U14*Enqueue 33>26 34=26 2|36b14 46l8 46t15
+33*26 The_Element{22+9} 2|36b22 44r52
+34r26 In_The_Queue{26R9} 2|37b22 40r15 43m10 43r39 44m10 44r32
+35U14*Dequeue 35<26 36=26 2|48b14 58l8 58t15
+35*26 An_Element{22+9} 2|48b22 55m10
+36r26 From_The_Queue{26R9} 2|49b22 52r16 55r22 55r46 56m10 56r41
+37U14*Read_First 37<26 38>26 2|60b14 69l8 69t18
+37*26 An_Element{22+9} 2|60b26 67m10
+38r26 From_The_Queue{26R9} 2|61b26 64r16 67r22 67r46
+41I12 Index{integer} 43r32 47r18 48r18 2|17r38 17r52
+43A9 Contents_Type(22+9)<integer> 46r18
+46a7 Contents{43A9} 2|44m23 55r37 67r37
+47i7 Head{41I12} 2|25r50 32r61 55r61 56m25 56r56 67r61
+48i7 Tail{41I12} 2|25r34 32r44 43m23 43r52 44r45
+X 2 queues.adb
+17V13 Increment{1|41I12} 17b13 17>24 20t7 25s14 32s14 32s24 43s29 56s31
+17i24 An_Index{1|41I12} 19r15
+

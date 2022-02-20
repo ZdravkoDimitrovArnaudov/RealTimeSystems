@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__secuencial.o
+[PROJECT FILES]
+/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/default.gpr
+20210325091759
+[BOUND OBJECT FILES]
+/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/sopa.o
+/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/secuencial.o
+[GENERATED SOURCE FILES]
+b__secuencial.ads
+b__secuencial.adb
+b__secuencial.ali
+[RESULTING OPTIONS]
+-L/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/
+-L/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/practica4/
+-L/usr/local/gnat-2016/lib/gcc/x86_64-pc-linux-gnu/4.9.4/adalib/
+-static
+-static-libgcc
+/usr/local/gnat-2016/lib/gcc/x86_64-pc-linux-gnu/4.9.4/adalib/libgnarl.a
+/usr/local/gnat-2016/lib/gcc/x86_64-pc-linux-gnu/4.9.4/adalib/libgnat.a
+-ldl
+-lpthread
+-lrt

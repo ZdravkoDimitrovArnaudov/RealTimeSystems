@@ -1,0 +1,256 @@
+Initializing error report...
+ 1   Processing_Resource (
+ 2      Type                   => Regular_Processor,
+ 3      Name                   => cpu1,
+ 4      Max_Interrupt_Priority => 32767,
+ 5      Min_Interrupt_Priority => 1,
+ 6      Worst_ISR_Switch       => 0.00,
+ 7      Avg_ISR_Switch         => 0.00,
+ 8      Best_ISR_Switch        => 0.00,
+ 9      Speed_Factor           => 1.00);
+ 11  Scheduler (
+ 12     Type            => Primary_Scheduler,
+ 13     Name            => sched1,
+ 14     Host            => cpu1,
+ 15     Policy          => 
+ 16        ( Type                 => Fixed_Priority,
+ 17          Worst_Context_Switch => 0.00,
+ 18          Avg_Context_Switch   => 0.00,
+ 19          Best_Context_Switch  => 0.00,
+ 20          Max_Priority         => 32767,
+ 21          Min_Priority         => 1));
+ 23  Scheduling_Server (
+ 24     Type                       => Regular,
+ 25     Name                       => t3,
+ 26     Server_Sched_Parameters    => 
+ 27        ( Type         => Fixed_Priority_Policy,
+ 28          The_Priority => 3,
+ 29          Preassigned  => NO),
+ 30     Scheduler                  => sched1);
+ 32  Scheduling_Server (
+ 33     Type                       => Regular,
+ 34     Name                       => t1,
+ 35     Server_Sched_Parameters    => 
+ 36        ( Type         => Fixed_Priority_Policy,
+ 37          The_Priority => 5,
+ 38          Preassigned  => NO),
+ 39     Scheduler                  => sched1);
+ 41  Scheduling_Server (
+ 42     Type                       => Regular,
+ 43     Name                       => t2,
+ 44     Server_Sched_Parameters    => 
+ 45        ( Type         => Fixed_Priority_Policy,
+ 46          The_Priority => 4,
+ 47          Preassigned  => NO),
+ 48     Scheduler                  => sched1);
+ 50  Scheduling_Server (
+ 51     Type                       => Regular,
+ 52     Name                       => t4,
+ 53     Server_Sched_Parameters    => 
+ 54        ( Type         => Fixed_Priority_Policy,
+ 55          The_Priority => 2,
+ 56          Preassigned  => NO),
+ 57     Scheduler                  => sched1);
+ 59  Scheduling_Server (
+ 60     Type                       => Regular,
+ 61     Name                       => t5,
+ 62     Server_Sched_Parameters    => 
+ 63        ( Type         => Fixed_Priority_Policy,
+ 64          The_Priority => 1,
+ 65          Preassigned  => NO),
+ 66     Scheduler                  => sched1);
+ 68  Shared_Resource (
+ 69     Type     => Priority_Inheritance_Resource,
+ 70     Name     => rc1);
+ 72  Shared_Resource (
+ 73     Type     => Priority_Inheritance_Resource,
+ 74     Name     => rc2);
+ 76  Operation (
+ 77     Type                       => Simple,
+ 78     Name                       => rc1_t3,
+ 79     Worst_Case_Execution_Time  => 0.400000,
+ 80     Avg_Case_Execution_Time    => 1.000E+100,
+ 81     Best_Case_Execution_Time   => 0.00,
+ 82     Shared_Resources_To_Lock   => 
+ 83        ( rc1),
+ 84     Shared_Resources_To_Unlock => 
+ 85        ( rc1));
+ 87  Operation (
+ 88     Type                     => Enclosing,
+ 89     Name                     => op_t3,
+ 90     Worst_Case_Execution_Time=> 4.40,
+ 91     Avg_Case_Execution_Time  => 1.000E+100,
+ 92     Best_Case_Execution_Time => 0.00,
+ 93     Composite_Operation_List => 
+ 94        ( rc1_t3));
+ 96  Operation (
+ 97     Type                       => Simple,
+ 98     Name                       => rc1_t2,
+ 99     Worst_Case_Execution_Time  => 0.200000,
+ 100    Avg_Case_Execution_Time    => 1.000E+100,
+ 101    Best_Case_Execution_Time   => 0.00,
+ 102    Shared_Resources_To_Lock   => 
+ 103       ( rc1),
+ 104    Shared_Resources_To_Unlock => 
+ 105       ( rc1));
+ 107 Operation (
+ 108    Type                       => Simple,
+ 109    Name                       => rc2_t2,
+ 110    Worst_Case_Execution_Time  => 1.00,
+ 111    Avg_Case_Execution_Time    => 1.000E+100,
+ 112    Best_Case_Execution_Time   => 0.00,
+ 113    Shared_Resources_To_Lock   => 
+ 114       ( rc2),
+ 115    Shared_Resources_To_Unlock => 
+ 116       ( rc2));
+ 118 Operation (
+ 119    Type                     => Enclosing,
+ 120    Name                     => op_t2,
+ 121    Worst_Case_Execution_Time=> 1.60,
+ 122    Avg_Case_Execution_Time  => 1.000E+100,
+ 123    Best_Case_Execution_Time => 0.00,
+ 124    Composite_Operation_List => 
+ 125       ( rc1_t2,
+ 126         rc2_t2));
+ 128 Operation (
+ 129    Type                       => Simple,
+ 130    Name                       => rc2_t5,
+ 131    Worst_Case_Execution_Time  => 1.00,
+ 132    Avg_Case_Execution_Time    => 1.000E+100,
+ 133    Best_Case_Execution_Time   => 0.00,
+ 134    Shared_Resources_To_Lock   => 
+ 135       ( rc2),
+ 136    Shared_Resources_To_Unlock => 
+ 137       ( rc2));
+ 139 Operation (
+ 140    Type                     => Enclosing,
+ 141    Name                     => op_t5,
+ 142    Worst_Case_Execution_Time=> 5.00,
+ 143    Avg_Case_Execution_Time  => 1.000E+100,
+ 144    Best_Case_Execution_Time => 0.00,
+ 145    Composite_Operation_List => 
+ 146       ( rc2_t5));
+ 148 Operation (
+ 149    Type                       => Simple,
+ 150    Name                       => op_t1,
+ 151    Worst_Case_Execution_Time  => 0.400000,
+ 152    Avg_Case_Execution_Time    => 1.000E+100,
+ 153    Best_Case_Execution_Time   => 0.00);
+ 155 Operation (
+ 156    Type                       => Simple,
+ 157    Name                       => op_t4,
+ 158    Worst_Case_Execution_Time  => 4.00,
+ 159    Avg_Case_Execution_Time    => 1.000E+100,
+ 160    Best_Case_Execution_Time   => 0.00);
+ 162 Transaction (
+ 163    Type            => regular,
+ 164    Name            => tr3,
+ 165    External_Events => 
+ 166       ( ( Type       => Periodic,
+ 167           Name       => in3,
+ 168           Period     => 15.000,
+ 169           Max_Jitter => 0.000,
+ 170           Phase      => 0.000)),
+ 171    Internal_Events => 
+ 172       ( ( Type => Regular,
+ 173           Name => out3,
+ 174           Timing_Requirements => 
+ 175             ( Type             => Hard_Global_Deadline,
+ 176               Deadline         => 15.000,
+ 177               Referenced_Event => in3))),
+ 178    Event_Handlers  => 
+ 179       ( (Type               => Activity,
+ 180          Input_Event        => in3,
+ 181          Output_Event       => out3,
+ 182          Activity_Operation => op_t3,
+ 183          Activity_Server    => t3)));
+ 185 Transaction (
+ 186    Type            => regular,
+ 187    Name            => tr1,
+ 188    External_Events => 
+ 189       ( ( Type       => Periodic,
+ 190           Name       => in1,
+ 191           Period     => 9.000,
+ 192           Max_Jitter => 0.000,
+ 193           Phase      => 0.000)),
+ 194    Internal_Events => 
+ 195       ( ( Type => Regular,
+ 196           Name => out1,
+ 197           Timing_Requirements => 
+ 198             ( Type             => Hard_Global_Deadline,
+ 199               Deadline         => 9.000,
+ 200               Referenced_Event => in1))),
+ 201    Event_Handlers  => 
+ 202       ( (Type               => Activity,
+ 203          Input_Event        => in1,
+ 204          Output_Event       => out1,
+ 205          Activity_Operation => op_t1,
+ 206          Activity_Server    => t1)));
+ 208 Transaction (
+ 209    Type            => regular,
+ 210    Name            => tr2,
+ 211    External_Events => 
+ 212       ( ( Type       => Periodic,
+ 213           Name       => in2,
+ 214           Period     => 10.000,
+ 215           Max_Jitter => 0.000,
+ 216           Phase      => 0.000)),
+ 217    Internal_Events => 
+ 218       ( ( Type => Regular,
+ 219           Name => out2,
+ 220           Timing_Requirements => 
+ 221             ( Type             => Hard_Global_Deadline,
+ 222               Deadline         => 10.000,
+ 223               Referenced_Event => in2))),
+ 224    Event_Handlers  => 
+ 225       ( (Type               => Activity,
+ 226          Input_Event        => in2,
+ 227          Output_Event       => out2,
+ 228          Activity_Operation => op_t2,
+ 229          Activity_Server    => t2)));
+ 231 Transaction (
+ 232    Type            => regular,
+ 233    Name            => tr4,
+ 234    External_Events => 
+ 235       ( ( Type       => Periodic,
+ 236           Name       => in4,
+ 237           Period     => 20.000,
+ 238           Max_Jitter => 0.000,
+ 239           Phase      => 0.000)),
+ 240    Internal_Events => 
+ 241       ( ( Type => Regular,
+ 242           Name => out4,
+ 243           Timing_Requirements => 
+ 244             ( Type             => Hard_Global_Deadline,
+ 245               Deadline         => 20.000,
+ 246               Referenced_Event => in4))),
+ 247    Event_Handlers  => 
+ 248       ( (Type               => Activity,
+ 249          Input_Event        => in4,
+ 250          Output_Event       => out4,
+ 251          Activity_Operation => op_t4,
+ 252          Activity_Server    => t4)));
+ 254 Transaction (
+ 255    Type            => regular,
+ 256    Name            => tr5,
+ 257    External_Events => 
+ 258       ( ( Type       => Periodic,
+ 259           Name       => in5,
+ 260           Period     => 50.000,
+ 261           Max_Jitter => 0.000,
+ 262           Phase      => 0.000)),
+ 263    Internal_Events => 
+ 264       ( ( Type => Regular,
+ 265           Name => out5,
+ 266           Timing_Requirements => 
+ 267             ( Type             => Hard_Global_Deadline,
+ 268               Deadline         => 50.000,
+ 269               Referenced_Event => in5))),
+ 270    Event_Handlers  => 
+ 271       ( (Type               => Activity,
+ 272          Input_Event        => in5,
+ 273          Output_Event       => out5,
+ 274          Activity_Operation => op_t5,
+ 275          Activity_Server    => t5)));
+ 276 
+

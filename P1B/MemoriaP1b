@@ -1,0 +1,74 @@
+#Parte 1-C
+
+Realizar análisis de planificablidad con MAST:
+	Caso1: buscar la tarea con menor horgura (slack) e incrementar su tiempo de ejecución hasta el límite de planificabilidad del sistema correspondiente.
+
+Como podemos observar, los slacks más pequeños se corresponden con las tareas 1 y 3.(FOTO1). Seleccionaremos la tarea 1. Como su slack es del 50%, aumentaremos su tiempo de ejecución hasta 2,25. Aumentamos dicho tiempo y vemos que sucede. Como vemos,todas las tareas presentan slack 0 excepto la última, ya que tiene bastante más tiempo para ejecutar. La nueva utilización del sistema es mucho mayor.
+
+	Caso2: Obtener la holgura del sistema e incrementar los tiempo de ejecución de todas las tareas hasta el límite de planificabilidad.
+
+Volvemos al caso anterior donde aún no habíamos incrementado los slacks de cada tarea (FOTO1). En este caso, la planificabilida total del sistema es 19.92%, significa que podemos aumetnar cada tarea por dicho porcentaje, para que la utilización sea máxima.
+
+Aumentamos todas las tareas por el porcentaje anterior y obtenemos que el slack del sistema es 0 pero aún la utilización no es máxima
+(FOTO3).Como vemos, podemos aun así incrementar un poco más el tiempo de ejecución de la última tarea con un slack de 0,390625. Lo incrementamos. Finalmente, el reparto último de tareas es el siguiente: FOTO4.Lo que hemos conseguido al final es una utilización de 94% y no se puede añadir más slack.
+Guardamos nuestro fichero mast.
+
+
+>>COMPROBACION IMPLEMENTACION
+
+Para poder probar el reparto de tareas previo, arrancamos con el proyecto de la practica anterior, modificamos los tiempos de ejecución y analizamos los resultados.
+
+
+1). Probaremos implementacion de caso 1:
+
+
+Modificamos unicamente el tiempo de ejecución de la primera tarea y vemos los tiempos de ejecución y si pierde plazo o no y ver que pasa.
+
+
+Como podemos apreciar (FOTO5), la tarea 3 pierde algunos plazos, con lo cual reduciremos un poco el slack de la primera tarea y vemos que sucede.
+
+Dejando el tiempo de ejecucion a 2.20, todos los plazos empiezan a cumplirse y el sistema vuelve a ser planificable. Probaremos a aumentarlo ligeramente para ver si podemos buscar un límite. 
+
+Como hemos visto, aumentando hasta 2.24 el sistema sigue siendo planificable. Podemos estimar un slack muy cercano a 50%.
+
+2)Probaremos implementacion de caso 2:
+
+Modificaremos el sistema hasta donde llegamos antes, donde el slack de todas las tareas era 0 y vemos que pasa.
+
+Mirando los resultados, los plazos se cumplen y por tanto el sistema sigue siendo planificable. Cabe destacar que en MAST, vimos una utilización cerca al 95% pero no 100%, quizás por este motivo en este caso la teoría se corresponda con la práctica. Podemos deducir que el slack del sistema podría verse aumentado muy levemente, cercano al 0%+.
+
+
+
+#Parte 1- D.
+
+Ahora, en el caso de la tarea 3, el periodo deja de ser igual al plazo porque se disminuye hasta llegar a 7 unidades de tiempo.
+
+1) Razonar si se debería modificar la configuración del sistema de tiempo real:
+
+Como el plazo de la tarea 3 es anterior a al periodo, la asignación de prioridades rate monotonic no son viables. Por consecuencia, debemos usar la asignación de prioridades Deadline Monotonic. Las prioridades son asignadas según los plazos de las tareas. Aquellas que tengan plazos menores tendrán mayor prioridad. En esta nueva situación,  el orden de prioridad de tareas será: T1, T3, T2, T4.
+
+
+2)Obtener los tiempos de respuesta del sistema en mast y en la implementación.
+
+Ejecutando con mast, vemos que el sistema sigue siendo planificable y cuenta con las mismas características que antes, FOTO9.
+
+Por último, probaremos implementar el conjunto de tareas con las nuevas prioridades asignadas.
+Finalmente, vemos que el conjunto de tareas sigue siendo planificable, al haber ordenado correctamente la asignación de prioridades según el plazo, FOTO10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

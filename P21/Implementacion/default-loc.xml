@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/practica1b.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/task_params.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 5" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/task_params.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/task_params.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 24" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/task_params.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 8" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/task_params.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 117" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/practica1b.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 34" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/practica1b.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 20" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/task_params.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/event_monitor.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/event_monitor.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 11" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/task_params.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 9" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/task_params.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 86" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/practica1b.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/event_monitor.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/default.gpr</vfs_project>
+      <vfs_file>/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P21/Implementacion/event_monitor.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P1/implementacion/default.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P1/implementacion/default.gpr</vfs_project>
+      <vfs_file >/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P1/implementacion/practica1b.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P1/implementacion/default.gpr</vfs_project>
+      <vfs_file >/remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/P1/implementacion/task_params.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

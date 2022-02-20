@@ -1,0 +1,68 @@
+V "GNAT Lib v2016"
+A --RTS=marteuc_linux_lib
+A -m32
+A -march=i686
+P ZX
+
+RN
+RV NO_FIXED_POINT
+
+U execution_load%b	execution_load.adb	e5b5f448 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.execution_time%s	a-exetim.adb		a-exetim.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+
+U execution_load%s	execution_load.ads	2b6ae91c EE NE OO PK
+
+D ada.ads		20181008100342 3ffc8e18 ada%s
+D a-except.ads		20181008100342 291912d5 ada.exceptions%s
+D a-exetim.ads		20181008100342 004e8f15 ada.execution_time%s
+D a-reatim.ads		20181008100342 a87e2da7 ada.real_time%s
+D a-taside.ads		20181008100342 c6417f71 ada.task_identification%s
+D a-unccon.ads		20181008100342 f9eb8f06 ada.unchecked_conversion%s
+D execution_load.ads	20190322171150 2b6ae91c execution_load%s
+D execution_load.adb	20190322171150 66efbfe6 execution_load%b
+D interfac.ads		20181008100342 5ab55268 interfaces%s
+D i-c.ads		20181008100342 5421119b interfaces.c%s
+D system.ads		20181008100342 c6f79445 system%s
+D s-atacco.ads		20181008100342 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20181008100342 54135002 system.exception_table%s
+D s-linux.ads		20181008100342 2fda6ad1 system.linux%s
+D s-multip.ads		20181008100342 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20181008100342 6236e5eb system.os_constants%s
+D s-osinte.ads		20181008100342 257483d0 system.os_interface%s
+D s-parame.ads		20181008100342 7e2a0d7f system.parameters%s
+D s-soflin.ads		20181008100342 14e1eb6c system.soft_links%s
+D s-stache.ads		20181008100342 a37c21ec system.stack_checking%s
+D s-stausa.ads		20181008100341 017a0a05 system.stack_usage%s
+D s-stalib.ads		20181008100342 09bd3940 system.standard_library%s
+D s-stoele.ads		20181008100342 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20181008100342 2b3f8252 system.task_info%s
+D s-taspri.ads		20181008100342 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20181008100342 1ea86599 system.task_primitives.operations%s
+D s-taskin.ads		20181008100342 56333711 system.tasking%s
+D s-traent.ads		20181008100342 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20181008100342 34867c83 system.unsigned_types%s
+X 1 ada.ads
+16K9*Ada 19e8 8|1r6 2r6 6r13 21r29 22r9 22r34 25r20
+X 3 a-exetim.ads
+39K13*Execution_Time 135e23 8|1w10 6r17 21r33 22r13 25r24
+43O9*CPU_Time<4|51O9> 8|6r32 21r48
+52V13*Clock{43O9} 8|22s28 25s39
+61V14*"+"{43O9}<4|67p13> 8|22s33
+89V14*">"{boolean}<4|80p13> 8|25r44
+X 4 a-reatim.ads
+39K13*Real_Time 187e18 8|2w10 22r38
+51O9*Time<duration>
+56O9*Time_Span<duration>
+114V13*To_Time_Span{56O9} 8|22s48
+X 7 execution_load.ads
+4K9*Execution_Load 12l5 12e19 8|4b14 29l5 29t19
+10U14*Eat 10>19 8|20b14 27l8 27t11
+10o19 For_Seconds{duration} 8|20b19 22r61
+X 8 execution_load.adb
+21o7 Final_Time{3|43O9} 25r45
+X 21 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

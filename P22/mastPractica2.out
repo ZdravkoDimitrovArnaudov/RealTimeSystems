@@ -1,0 +1,111 @@
+Real_Time_Situation (
+   Generation_Tool    => "MAST Schedulability Analysis, version 1.5.1.2",
+   Generation_Profile => "/usr/local/bin/mast_analysis default -c -p -s /remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/mastPractica2.txt /remotehome/dimitroz/Documentos/TiempoReal/Laboratorio/mastPractica2.out",
+   Generation_Date    => 2021-05-06T10:57:34,
+   Results            => 
+       ((Type   => Slack,
+         Value  => 11.72%)));
+
+Transaction (
+   Name     => tr3,
+   Results  => 
+       ((Type   => Slack,
+         Value  => 36.33%),
+        (Type                          => Timing_Result,
+         Event_Name                    => out3,
+         Num_Of_Suspensions            => 1,
+         Worst_Blocking_Time           => 1.000,
+         Worst_Global_Response_Times   => 
+            ((Referenced_Event => in3,
+              Time_Value       => 7.400)),
+         Best_Global_Response_Times    => 
+            ((Referenced_Event => in3,
+              Time_Value       => 0.000)),
+         Jitters                       => 
+            ((Referenced_Event => in3,
+              Time_Value       => 7.400)))));
+
+Transaction (
+   Name     => tr1,
+   Results  => 
+       ((Type   => Slack,
+         Value  => 200.00%),
+        (Type                          => Timing_Result,
+         Event_Name                    => out1,
+         Num_Of_Suspensions            => 0,
+         Worst_Blocking_Time           => 0.000,
+         Worst_Global_Response_Times   => 
+            ((Referenced_Event => in1,
+              Time_Value       => 0.400000)),
+         Best_Global_Response_Times    => 
+            ((Referenced_Event => in1,
+              Time_Value       => 0.000)),
+         Jitters                       => 
+            ((Referenced_Event => in1,
+              Time_Value       => 0.400000)))));
+
+Transaction (
+   Name     => tr2,
+   Results  => 
+       ((Type   => Slack,
+         Value  => 56.25%),
+        (Type                          => Timing_Result,
+         Event_Name                    => out2,
+         Num_Of_Suspensions            => 2,
+         Worst_Blocking_Time           => 1.400,
+         Worst_Global_Response_Times   => 
+            ((Referenced_Event => in2,
+              Time_Value       => 3.400)),
+         Best_Global_Response_Times    => 
+            ((Referenced_Event => in2,
+              Time_Value       => 0.000)),
+         Jitters                       => 
+            ((Referenced_Event => in2,
+              Time_Value       => 3.400)))));
+
+Transaction (
+   Name     => tr4,
+   Results  => 
+       ((Type   => Slack,
+         Value  => 44.92%),
+        (Type                          => Timing_Result,
+         Event_Name                    => out4,
+         Num_Of_Suspensions            => 1,
+         Worst_Blocking_Time           => 1.000,
+         Worst_Global_Response_Times   => 
+            ((Referenced_Event => in4,
+              Time_Value       => 13.400)),
+         Best_Global_Response_Times    => 
+            ((Referenced_Event => in4,
+              Time_Value       => 0.000)),
+         Jitters                       => 
+            ((Referenced_Event => in4,
+              Time_Value       => 13.400)))));
+
+Transaction (
+   Name     => tr5,
+   Results  => 
+       ((Type   => Slack,
+         Value  => 107.81%),
+        (Type                          => Timing_Result,
+         Event_Name                    => out5,
+         Num_Of_Suspensions            => 0,
+         Worst_Blocking_Time           => 0.000,
+         Worst_Global_Response_Times   => 
+            ((Referenced_Event => in5,
+              Time_Value       => 28.200)),
+         Best_Global_Response_Times    => 
+            ((Referenced_Event => in5,
+              Time_Value       => 0.000)),
+         Jitters                       => 
+            ((Referenced_Event => in5,
+              Time_Value       => 28.200)))));
+
+Processing_Resource (
+   Name     => cpu1,
+   Results  => 
+       ((Type   => Slack,
+         Value  => 12.21%),
+        (Type   => Utilization,
+         Total  => 79.78%)));
+
